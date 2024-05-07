@@ -1,33 +1,33 @@
-vendor Management System
-Description
-The vendor management REST API service that includes vendor resigration into the system and authenticate them using Token based authentication. The vendors can add Purchase orders and acknowledge and update the status once the order has been delivered to the end user.
+# Vendor Management System
+## Description
+The vendor management REST API service that includes vendor resigration. The vendors can add Purchase orders and acknowledge and update the status once the order has been delivered to the end user.
 
-Table of Contents
-Installation
-Usage
-Configuration
-Installation
-# Clone the repository
-$ git clone https://github.com/SivaMadhavan/vms_vault.git
+## Installation
+### Clone the repository
+$ https://github.com/arulvadivelav/Vendor-management.git
 
-# Navigate to the project directory
-$ cd vms_vault
+### Navigate to the project directory
+$ cd vendor_manage
 
-create a virtual environment(unix)
-$ python3 -m venv vms_env
+### Create a virtual environment(unix)
+$ python3 -m venv vendor_env
 
-# Install dependencies
-$ pip install -r requirements.txt
-Update the settings.py file with the necessary configuration parameters.
+### Activate virtual environment(unix)
+$ vendor_env/Scipts/activate.bat
 
-udpate the database section of vms_vault/settings.py as per your local configuration
+### Install dependencies
+$ pip install -r requirements.in
 
-Apply migrations
-create a database named vms (if you are using mysql backend, ingore if you are using default sqlite3)
+Update the __settings.py__ file with the necessary configuration parameters.
 
+udpate the database section of __vendor_manage/settings.py__ as per your local configuration
+
+## Apply migrations
 python manage.py migrate
-Usage
-# Run the development server
+
+## Run a application
 python manage.py runserver
-The complete API doc can be found here http://localhost:8000/doc/
+
+## The complete API doc can be found here
+http://127.0.0.1:8000/api/schema/swagger-ui/
 
