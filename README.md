@@ -20,7 +20,7 @@ $ https://github.com/arulvadivelav/Vendor-management.git
 
 Update the __settings.py__ file with the necessary configuration parameters.
 
-udpate the database section of __vendor_manage/settings.py__ as per your local configuration
+update the database section of __vendor_manage/settings.py__ as per your local configuration
 
 ## Apply migrations
 ```python manage.py migrate```
